@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Shop</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/steam-icon.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#freegames">Free Games</a></li>
+            <li><a href="index.html#shop">Shop</a></li>
+            <li><a href="index.html#app">App</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                <p id="count">0</p>
+            </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">฿ 0.00</h2>
+            </div>
+            <button type="submit" id="btn-submit">ยืนยัน</button>
+        </div>
+    </div>
+    <script src="shop.js"></script>
+</body>
+
+</html>

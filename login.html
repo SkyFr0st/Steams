@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/steam-icon.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#shop">Free Games</a></li>
+            <li><a href="index.html#delivery">Shop</a></li>
+            <li><a href="index.html#app">App</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+    </header>
+    
+    <div class="container">
+        <h1>Login</h1>
+    <form id="form" onsubmit="return validateForm()" action="index.html">
+        
+        <div class="Username">
+            <label for="user">Username :</label>
+            <input type="text" id="username" placeholder="Type your username">
+        </div>
+
+        <div class="Password">
+            <p><label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Type your password"></p>
+        </div>
+
+        <button type="submit" id="btn">Login</button>
+        <p><button type="reset" id="cancel">Cancel</button></p>
+
+        <p id="register1">คุณยังไม่ได้สมัครสมาชิก <a href="register.html">Register</a></p>
+
+    </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

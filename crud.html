@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="img/steam-icon.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#shop">Free Games</a></li>
+            <li><a href="index.html#delivery">Shop</a></li>
+            <li><a href="index.html#app">App</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section>
+        <div class="container">
+            <form id="form-input" onsubmit="event.preventDefault(); FormSubmit();">
+                <h1>Free Games</h1>
+
+                <div class="Name-Last">
+                    <label for="name-last">ชื่อเกม :</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="Nickname">
+                    <label for="nickname">ชื่อเล่น :</label>
+                    <input type="text" id="nickname" required>
+                </div>
+
+                <div class="Age">
+                    <label for="age">อายุ :</label>
+                    <input type="number" id="age" required>
+                </div>
+
+                <div class="Tel">
+                    <label for="tel">เบอร์โทร :</label>
+                    <input type="number" id="tel" required>
+                </div>
+
+                <div class="BTN">
+                    <button type="submit" id="btn-submit">บันทึกข้อมูล</button>
+                    <button type="reset" id="btn-reset">ล้างข้อมูล</button>
+                </div>
+
+                    <!-- แสดงข้อมูลที่บันทึก -->
+                    <table border="1" id="tbl-contact">
+                        <tr>
+                            <th>ชื่อเกม</th>
+                            <th>ชื่อเล่น</th>
+                            <th>อายุ</th>
+                            <th>เบอร์โทร</th>
+                            <th>แก้ไข</th>
+                            <th>ลบ</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td id="Name"></td>
+                                <td id="Nick"></td>
+                                <td id="Ages"></td>
+                                <td id="Tel"></td>
+                                <td id="Edit"></td>
+                                <td id="Delete"></td>
+                            </tr>
+                        </tbody>
+
+
+
+                    </table>
+
+                </section>
+
+            </form>
+        </div>
+    </main>
+        <script src="crud.js"></script>
+</body>
+
+</html>
